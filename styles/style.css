@@ -12,18 +12,18 @@ body:has(.profile-card-example) {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: #141414;
 }
 
 article.profile-card-example {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
+  max-width: 50em;
+  min-width: 50em;
   border-radius: 1rem;
   background: rgb(0,239,255);
   background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
@@ -33,10 +33,10 @@ article.profile-card-example {
 
 header.profile-card-example-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
   /* Je kunt selectors nesten! */
   h1 {
@@ -61,13 +61,13 @@ button.profile-card-example-button {
 }
 button.profile-card-example-button:focus {
   outline: none;
-  background: #202592;
+  background: #18fee3;
 }
 button.profile-card-example-button svg {
   position: absolute;
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
+  stroke: #81f287;
   transition-delay: .25s;
 }
 button.profile-card-example-button:focus svg {
@@ -91,7 +91,7 @@ button.profile-card-example-button svg:nth-of-type(2) {
 
 .profile-card-example-dl {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
   grid-template-areas:
     "html-dd css-dd js-dd"
     "html-dt css-dt js-dt"
@@ -103,7 +103,7 @@ button.profile-card-example-button svg:nth-of-type(2) {
   margin-bottom: 0;
   padding: 5rem 0 3rem;
   text-align: center;
-  background: rgb(255,255,255);
+  background: rgb(255, 255, 255);
 
   dt {
     margin-top: .25rem;
