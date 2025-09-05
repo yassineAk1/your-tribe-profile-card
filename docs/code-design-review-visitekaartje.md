@@ -4,7 +4,7 @@
 
 _In de workshop S01W1-08-Code-Design-Review wordt uitgelegd wat je moet doen._
 
-Een van de fases van de Development Lifecycle (DLC) is testen. Dit doen frontenders o.a. door regelmatig een _code and design review_ te doen met collega's. 
+Een van de fases van de Development Lifecycle (DLC) is _Testen_. Dit doen frontenders o.a. door regelmatig een _code and design review_ te doen met collega's. 
 Bij FDND doen we elke vrijdag zo'n review en bekijken we elkaars code en design. 
 De feedback leg je vast in issues bij je leertaak. 
 Hier kun je volgende week mee verder om je website te verbeteren. 
@@ -17,7 +17,7 @@ Deze manier van werken heet iteratief werken. Je doorloopt meerdere keren de DLC
 
 ### Aanpak 
 
-Deze week heb je een visitekaartje ontworpen en gemaakt. Het maakt niet uit hoe ver je bent, je kan altijd feedback halen op stukken code of dat deel van het ontwerp dat je al wel gemaakt hebt. 
+Deze week heb je een visitekaartje ontworpen en gemaakt. Het maakt niet uit hoe ver je bent, je kan altijd feedback halen op stukken code of dat deel van het ontwerp dat je al wel gemaakt hebt. Zorg dat je issues van je _repository_ [aan staan](https://github.com/fdnd-task/your-tribe-profile-card/blob/main/docs/visitekaartje-ontwerpen-maken-en-online-publiceren.md#2-testen-en-feedback-krijgen). En dat je de meest recente versie naar je online _repository_ hebt [gepusht](https://github.com/fdnd-task/your-tribe-profile-card/blob/main/docs/visitekaartje-ontwerpen-maken-en-online-publiceren.md#integreren-15-min).
 
 Vandaag krijg je feedback op code en design die we in workshops in de eerste week hebben behandeld. 
 Hieronder staat een leidraad voor de review die je op het werk van een andere student gaat doen. 
@@ -26,12 +26,10 @@ Schrijf altijd nette teksten in een issue en probeer een bron of voorbeeld bij t
 
 Doe de review in tweetallen of drietallen en bespreek alles wat je tegenkomt. Doe minimaal 3 keer een Code/Design review voor andere studenten uit je squad.
 
-
-0. Zorg dat je issues van je _repository_ aan staan. En dat je je de meest recente versie naar je online _repository_ hebt gepusht.
-1. Test of de HTML goed is door een _HTML validator check_ te doen op de W3C website: https://validator.w3.org. Schrijf een issue als er in de test problemen naar voren zijn gekomen.
-2. Bekijk alle HTML. Let met name op de _[Content sectioning](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)_, zijn de juiste elementen gebruikt voor de content van de pagina zoals een`<main>`, `<header>`, `<footer>`, `<h1>`-`<h6>`? 
-3. Bekijk de CSS, zijn enkele selectors en properties uitgelegd met comments in de code? Gebruikt de [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) om te kijken of de uitleg klopt. 
-4. Check het design in een browser. Schrijf een issues als je iets ziet wat beter kan of als je een leuk idee hebt.
+1. Test of de HTML goed is door een _HTML validator check_ te doen via de W3C website: https://validator.w3.org. Schrijf een issue als er in de test problemen naar voren zijn gekomen.
+2. Bekijk de CSS, zijn enkele selectors en properties uitgelegd met comments in de code? Gebruik de [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) om te kijken of de uitleg klopt. 
+3. Check het design in een browser. Schrijf een issues als je iets ziet wat beter kan of als je een leuk idee hebt.
+4. Optioneel: Bekijk of er JavaScript is geschreven. Begrijp je de code? Schrijf een issue als je feedback hebt of als je het een toffe interactie vindt.
 
 
 ### Bronnen
