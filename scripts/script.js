@@ -31,9 +31,10 @@ hobbyItems.forEach(item => {
 // Profielfoto selecteren
 const profileImg = document.querySelector('.profile-card-example-img');
 
-// Klik-event om te resetten naar originele achtergrond
+// Klik-event om reset naar CSS-background te doen
 profileImg.addEventListener('click', () => {
-  body.style.backgroundImage = originalBackground;
-  body.style.backgroundSize = 'cover';
-  body.style.backgroundPosition = 'center';
+  body.style.backgroundImage = "";
+  body.style.backgroundSize = "";
+  body.style.backgroundPosition = "";
 });
+
