@@ -5,7 +5,7 @@ const hobbyItems = document.querySelectorAll('.profile-card-hobbies li');
 const body = document.body;
 
 
-const originalBackground = "url('../assets/20231023_133133.jpg')";
+const originalBackground = "url('assets/20231023_133133.jpg')";
 
 
 const hobbyGifs = {
