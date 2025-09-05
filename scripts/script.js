@@ -9,10 +9,10 @@ const originalBackground = "url('../assets/20231023_133133.jpg')";
 
 
 const hobbyGifs = {
-  "🏔️ Reizen": "../assets/20231023_134005(1).gif",
-  "🎮 Gaming": "../assets/215619.gif",
-  "🏋️ Sporten": "../assets/fitness.gif",
-  "🥋 Kung Fu": "../assets/KB6Kioh.gif"
+  "🏔️ Reizen": "assets/20231023_134005(1).gif",
+  "🎮 Gaming": "assets/215619.gif",
+  "🏋️ Sporten": "assets/strong-tough.gif",
+  "🥋 Kung Fu": "assets/KB6Kioh.gif"
 };
 
 // Klik-event voor elke hobby
