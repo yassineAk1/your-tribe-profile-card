@@ -62,6 +62,9 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
+.profile-card-example-img:hover {
+  transform: scale(110%);
+}
 /* naam + tagline */
 .profile-card-example-header h1 {
   font-size: 2rem;
@@ -112,22 +115,22 @@ body {
 /* Verschillende hover effecten per hobby */
 .profile-card-hobbies li:nth-child(1):hover {
   background: rgba(20, 221, 232, 0.7);  /* roodachtig */
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .profile-card-hobbies li:nth-child(2):hover {
   background: rgba(255, 242, 100, 0.7);  /* blauwachtig */
-  transform: scale(1.1) rotate(-2deg);
+  transform: scale(1.2) rotate(-2deg);
 }
 
 .profile-card-hobbies li:nth-child(3):hover {
   background: rgba(34, 37, 35, 0.7);  /* groenachtig */
-  transform: scale(1.1) rotate(2deg);
+  transform: scale(1.2) rotate(2deg);
 }
 
 .profile-card-hobbies li:nth-child(4):hover {
   background: rgba(255, 0, 0, 0.7);  /* paarsachtig */
-  transform: scale(1.1) rotate(-3deg);
+  transform: scale(1.2) rotate(-3deg);
 }
 
 
