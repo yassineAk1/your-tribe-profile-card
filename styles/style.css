@@ -1,136 +1,130 @@
+/* alle elementen krijgen standaard geen margin/padding*/
 * {
-  box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
 }
 
+
 body {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Open Sans', sans-serif;
+  height: 100vh; /* Volledige hoogte van het scherm */
+  display: flex; /* Flexbox voor centreren */
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  font-family: 'Open Sans', sans-serif; /* Lettertype */
 
-  /* achtergrondfoto */
+  /* Standaard achtergrondafbeelding */
   background-image: url("../assets/20231023_133133.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: cover; /* Afbeelding vult het hele scherm */
+  background-position: center; /* Afbeelding gecentreerd */
+  background-attachment: fixed; /* Achtergrond blijft op zijn plek bij scrollen */
 }
 
-/* visitekaartje container */
+/* Het visitekaartje zelf */
 .profile-card-example {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Elementen onder elkaar */
+  align-items: center; /* Alles horizontaal gecentreerd */
+  text-align: center; /* Tekst gecentreerd */
   
+  padding: 2rem; /* Ruimte binnen het kaartje */
+  max-width: 20rem; /* Maximaal 20rem breed */
 
-  padding: 2rem;
-  width: 80%;
-  max-width: 350px;
+  border-radius: 1.5rem; /* Afgeronde hoeken */
 
-  border-radius: 1.5rem;
-
-  /* glassmorphism effect */
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  /* Glassmorphism effect: doorzichtig met blur */
+  background: rgba(255, 255, 255, 0.2); /* Licht wit, semi-transparant */
+  backdrop-filter: blur(1px); /* Blur effect achter het kaartje */
+  -webkit-backdrop-filter: blur(10px); /* Blur voor Safari */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Schaduw rondom het kaartje */
+  color: #fff; /* Witte tekstkleur */
 }
+
+/* Animatie voor het kaartje */
 .profile-card-example {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Vloeiende overgang */
 }
 
+/* Als je over het kaartje hovert: beweegt omhoog en wordt groter */
 .profile-card-example:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 40px (94, 241, 104, 0.5);
+  transform: translateY(-10px) scale(1.03); /* 10px omhoog, 3% groter */
+  box-shadow: 0 12px 40px (94, 241, 104, 0.5); /* Sterkere schaduw */
 }
 
-
-/* profielfoto */
+/* De profielfoto */
 .profile-card-example-img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.6);
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 10rem; /* Breedte van de foto */
+  height: 10rem; /* Hoogte van de foto */
+  object-fit: cover; /* Foto vult de ruimte zonder vervorming */
+  border-radius: 50%; /* Maakt de foto rond */
+  border: 4px solid rgba(255, 255, 255, 0.6); /* Witte rand rondom */
+  margin-bottom: 1rem; /* Ruimte onder de foto */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Schaduw rondom de foto */
 }
 
+/* Als je over de foto hovert: wordt 10% groter */
 .profile-card-example-img:hover {
-  transform: scale(110%);
-}
-/* naam + tagline */
-.profile-card-example-header h1 {
-  font-size: 2rem;
-  color: #fff;
+  transform: scale(110%); /* 110% van originele grootte */
 }
 
-.profile-card-example-header h3 {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #e0e0e0;
-  margin-top: 0.5rem;
-}
-
-/* bio */
+/* De bio-tekst */
 .profile-card-bio {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 1.5rem 0;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 1rem;
-  color: #f0f0f0;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Serif lettertype */
+  margin: 1.5rem 0; /* Ruimte boven en onder */
+  padding: 1rem; /* Ruimte binnen het vlak */
+  background: rgba(255, 255, 255, 0.15); /* Licht transparant wit vlak */
+  border-radius: 1rem; /* Afgeronde hoeken */
+  color: #f0f0f0; /* Bijna witte tekstkleur */
+  font-size: 0.95rem; /* Iets kleinere letters */
+  line-height: 1.4; /* Regelafstand voor leesbaarheid */
 }
 
-/* hobby’s */
+/* Titel boven de hobby's */
 .profile-card-hobbies h2 {
-  margin-bottom: 1rem;
-  color: #fff;
+  margin-bottom: 1rem; /* Ruimte onder de titel */
+  color: #ffffff; /* Witte kleur */
 }
 
+/* De lijst met hobby's */
 .profile-card-hobbies ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  list-style: none; /* Geen standaard bullets */
+  display: flex; /* Flexbox: hobby's naast elkaar */
+  gap: 1rem; /* Ruimte tussen de hobby's */
+  justify-content: center; /* Gecentreerd */
+  flex-wrap: wrap; /* Als het niet past, ga naar volgende regel */
 }
 
+/* Elk individueel hobby-item */
 .profile-card-hobbies li {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  font-size: 0.9rem;
-  color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.15); /* Licht transparant vlak */
+  padding: 0.5rem 1rem; /* Ruimte binnen het hokje */
+  border-radius: 1rem; /* Afgeronde hoeken */
+  font-size: 0.9rem; /* Iets kleinere letters */
+  color: #fff; /* Witte tekst */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtiele schaduw */
 }
-/* Verschillende hover effecten per hobby */
+
+/* Hover effect voor 1e hobby (Reizen): cyaan kleur */
 .profile-card-hobbies li:nth-child(1):hover {
-  background: rgba(20, 221, 232, 0.7);  /* roodachtig */
-  transform: scale(1.2);
+  background: rgba(20, 221, 232, 0.7); /* Cyaan/turquoise */
+  transform: scale(1.2) rotate(-2deg); /* Groter + 2 graden rechtsom */
 }
 
+/* Hover effect voor 2e hobby (Gaming): geel en licht gedraaid */
 .profile-card-hobbies li:nth-child(2):hover {
-  background: rgba(255, 242, 100, 0.7);  /* blauwachtig */
-  transform: scale(1.2) rotate(-2deg);
+  background: rgba(255, 242, 100, 0.7); /* Geel */
+  transform: scale(1.2) rotate(-2deg); /* Groter + 2 graden linksom */
 }
 
+/* Hover effect voor 3e hobby (Sporten): donkergrijs en licht gedraaid */
 .profile-card-hobbies li:nth-child(3):hover {
-  background: rgba(34, 37, 35, 0.7);  /* groenachtig */
-  transform: scale(1.2) rotate(2deg);
+  background: rgba(34, 37, 35, 0.7); /* Donkergrijs/groenachtig */
+  transform: scale(1.2) rotate(2deg); /* Groter + 2 graden rechtsom */
 }
 
+/* Hover effect voor 4e hobby (Kung Fu): rood en gedraaid */
 .profile-card-hobbies li:nth-child(4):hover {
-  background: rgba(255, 0, 0, 0.7);  /* paarsachtig */
-  transform: scale(1.2) rotate(-3deg);
+  background: rgba(255, 0, 0, 0.7); /* Rood */
+  transform: scale(1.2) rotate(-3deg); /* Groter + 3 graden linksom */
 }
-
-
-
